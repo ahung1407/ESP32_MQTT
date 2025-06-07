@@ -32,14 +32,8 @@ jobs:
       - name: Build firmware
         run: platformio run
 
-      - name: Copy firmware binaries
-        run: |
-          mkdir -p artifacts
-          cp .pio/build/*/firmware.bin artifacts/
-
-      - name: Upload firmware binaries
+      - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: esp32-firmware-binaries
-          path: artifacts/*.bin
-          compression-level: 0  # Không nén
+          name: esp32-firmware
+          path: .pio/build/*/firmware.bin
