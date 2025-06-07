@@ -8,8 +8,8 @@
   #include <ArduinoOTA.h>
 
   // Thông tin WiFi
-  constexpr char WIFI_SSID[] = "abcd";
-  constexpr char WIFI_PASSWORD[] = "123456789";
+  constexpr char WIFI_SSID[] = "binbin";
+  constexpr char WIFI_PASSWORD[] = "0906640081";
 
   // Thông tin Core IoT (ThingsBoard)
   constexpr char TOKEN[] = "d29e04h4jwpi602bbc5z";
